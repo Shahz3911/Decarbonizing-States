@@ -35,7 +35,9 @@ This tells us electricity emissions of all sttates in the USA from 1970 - 2020
 
 This is a major figure of the study that illustrates how over the years, there has been a shift in relying on coal and it is being replaced by natural gas especially after 2006
 
+
 ![Top 5 states with highest electricity emissions](Electricity_Emissions_Top_5_States.png)
+This tells us which States have the highest level of electricity emissions
 
 ![Total Emissions from Gas, Goal and Electricity (1970 - 2020)](Gas_Coal_Electricity_Emissions.png)
 
