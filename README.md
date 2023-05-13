@@ -1,25 +1,19 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 12 20:11:36 2023
 
-@author: snaee
-"""
+# Trends in Carbon Emissions in USA 
 
-#Trends in Carbon Emissions in USA 
-
-##Summary
+## Summary
 The project aims to look at carbon emissions in USA across all of its States. The aim is to determine carbon emissions per capita, mapping out the top 5 States that are responsible for carbon emissions. After that, I am interested to look at carbon emissions through the Electricity Power Generation sector as it is a significant source of carbon emissions in the USA. In particular I want to map out the trends wih regards to using coal, natural gas and petroleum to produce electricity and then show the decline in coal powered electricity emissions across the years while it gets substituted by natural gas.
 Essentially the project is a useful starting point for policymakers to understand the state of carbon emissions in USA
 
-##Methodology
+## Methodology
 My methodology essentially involved extracting excel files from EIA's website. In particular I first downloaded a file that had a total breakdown of carbon emissions per capita across all US States while also giving a breakdown of coal, natural gas and electricity emissions. After that I individually looked at excel files tha just focused on coal, natural gas and electricity. I merged all three of these into a dataset to map out trends. Finally I had to download each State's excel file which provided information on carbon emissions through various sectors such as transportation, residential and electricity. I had to clean the dataset on python to just look at electricity emissions and then combined all the electricity emissions and its breakdown for all states into one dataset. I finally calculated total % of electricity generation through coal, natural gas and petroleum products.
 Essentially my major outputs are various graphs that include linegraphs, heatmaps and boxplots to show the trends related to overall emissions and electricity generation emissions.
 
-##Scripts
+## Scripts
 
 Once all the data has been gathered and the excel files have been put in one directory, I created one python script which is called emissions.data.py
 
-##Outputs 
+## Outputs 
 
 My script is able to produce the following outputs:
 
@@ -35,9 +29,7 @@ This tells us electricity emissions of all sttates in the USA from 1970 - 2020
 
 This is a major figure of the study that illustrates how over the years, there has been a shift in relying on coal and it is being replaced by natural gas especially after 2006
 
-
 ![Top 5 states with highest electricity emissions](Electricity_Emissions_Top_5_States.png)
-This tells us which States have the highest level of electricity emissions
 
 ![Total Emissions from Gas, Goal and Electricity (1970 - 2020)](Gas_Coal_Electricity_Emissions.png)
 
@@ -53,23 +45,26 @@ We then looked at top 5 states that have the highest level of per capita emissio
 
 ![Top 10 states that have the highest per capita emissions](Top_10_Emissions_Boxplot_Per_Capita.png)
 
+It was also interesting to observe the total CO2 emission trends across USA (1970 - 2020)
+
+![Total Co2 Emissions in USA from 1970 to 2020](Total_CO2_Emissions_Trend.png)
 
 We also looked at the trends in just the electricity sector and made a line graph to show those trends
 ![Total electricity emissions trends from 1970 - 2020](Total_Electricity_All_States.png)
 
 
-##Results
+## Results
 
-The purpose of my analysis was to map out trends of carbon emissions and then specifically looking at the electricity generation sector.
+The analysis of the data reveals a marked shift in electricity production from coal to natural gas over the years. The total carbon emissions have been steadily decreasing, particularly after 2006. This trend indicates a significant evolution in the energy sector and is a positive development from an environmental perspective, given that natural gas burns more cleanly and produces fewer emissions than coal.
 
-It is interesting that average per capita emissions has fallen in the past decade compared to the years preceding that. Carbon emissions were at its zenith during the 90s but there has been a steady decline ever since.
+From a policy standpoint, these findings underline the importance of continued support for cleaner energy sources. Policymakers should be encouraged by this trend and should continue to advocate for policies that facilitate the transition away from fossil fuels, particularly coal, to cleaner alternatives like natural gas, and ultimately, to renewable energy sources.
 
-I looked at the electricity generation sector and it was interesting to note that there has been a significant decrease in reliance on coal powered electricity as its percentage has declined across States while there has been an increase in electricity production through natural gas.
+Moreover, the trend also highlights the potential need for policies to manage this transition in a way that minimizes potential social and economic disruptions, particularly in regions heavily dependent on coal production.
 
-In the future, I would like to see whether that decline has been due to a switch in electricity generation sector which switched relying on coal and increased its reliance on natural gas.
+The findings also shed light on the total emissions from all sectors, revealing that certain states have higher per capita emissions than others. Specifically, Wyoming, North Dakota, Alaska, West Virginia, and Louisiana have the highest per capita total emissions. This insight is valuable for policymakers as it highlights the areas where efforts to reduce emissions could have the greatest impact.
+
+These states, which have high per capita emissions, likely have economies that are heavily dependent on industries with high carbon footprints, such as mining, oil and gas extraction, and manufacturing. Therefore, these states would be ideal candidates for policies aimed at promoting a transition to cleaner industries and technologies.
+
+Finally, while the shift to natural gas has contributed to a decrease in emissions, it's important to remember that natural gas is still a fossil fuel. As such, the ultimate goal should be a transition towards renewable and zero-emission energy sources. Policies aimed at supporting research and development in renewable energy technologies, improving energy efficiency, and creating economic incentives for renewable energy use will be crucial in achieving this goal.
 
 
-
-
-
-#
