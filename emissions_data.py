@@ -134,7 +134,6 @@ df.dtypes
 
 #The melt function in pandas is used to transform a DataFrame from a wide format to a long format.
 
-#In a wide format DataFrame, the data is organized in a way that each row represents a unique observation and each column represents a variable. This is useful when you have a small number of variables and a large number of observations.
 
 # Read the Excel file into a DataFrame
 df_electricity = pd.read_excel('electricity .xlsx', index_col=0)
@@ -216,7 +215,7 @@ coal_emissions_reset = coal_emissions.reset_index()
 if 'index' in coal_emissions.columns:
     coal_emissions_reset = coal_emissions.drop(columns=['index'])
 
-# Now use melt() to reshape your DataFrame
+# Use Melt() to reshape your DataFrame
 coal_emissions_melted = coal_emissions.melt(id_vars=['State'], var_name='Year', value_name='Emissions_coal')
 
 natural_gas_emissions_reset = natural_gas_emissions.reset_index()
